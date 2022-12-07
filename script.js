@@ -38,16 +38,16 @@ console.log(blackboardElement);
            Valuto se il numero è un multiplo di 3 e/o 5, e stampo il valore richiesto.*/
 for(let i = 1; i <= 100; i++) {
     if (((i % 3) === 0) && ((i % 5) === 0)) {
-        console.log(`FizzBuzz`);
-        // blackboardElement.innerText += `FizzBuzz`;
-     } else if ((i % 3) === 0){
-        console.log(`Fizz`);
-        // blackboardElement.innerText += `Fizz`;
+        // console.log(`FizzBuzz`);
+        blackboardElement.innerText += (`FizzBuzz`);
+     }  else if ((i % 3) === 0){
+        // console.log(`Fizz`);
+        blackboardElement.innerText += (`Fizz`);
      } else if ((i % 5) === 0){
-        console.log(`Buzz`);
-        // blackboardElement.innerText += `Buzz`;
+        // console.log(`Buzz`);
+        blackboardElement.innerText += (`Buzz`);
      } else
-        console.log(i);
-        // blackboardElement.innerText += (i);
+        // console.log(i);
+        blackboardElement.innerText += (i);
 
 }

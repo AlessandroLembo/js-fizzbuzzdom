@@ -2,7 +2,7 @@ console.log(" JS OK ");
 
 /*
 TRACCIA:
-
+♠
 Consegna:
  Scrivi un programma che stampi in console i numeri da 1 a 100, ma che
  per i multipli di 3 stampi “Fizz” al posto del numero
@@ -21,33 +21,33 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 /*
 ANALISI
 1 - Prendo gli elementi dalla pagina
-2 - Creo delle variabili con un nome che si andrà a stampare
-3 - Apro un ciclo che mi ripeta un'operazione per 100 volte
-4 - All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
-5 - Valuto se il numero è un multiplo di 3 e/o 5, e stampo il valore richiesto. 
-6 - (BONUS 1) Creo un contenitore nel DOM HTML e ci stampo gli elementi
-7 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi stampati in pagina (numero, buzz, fizz, fizzbuzz)
+2 - Apro un ciclo che mi ripeta un'operazione per 100 volte
+3 - All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
+4 - Valuto se il numero è un multiplo di 3 e/o 5, e stampo il valore richiesto. 
+5 - (BONUS 1) Creo un contenitore nel DOM HTML e ci stampo gli elementi
+6 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi stampati in pagina (numero, buzz, fizz, fizzbuzz)
 */
 
 // 1 - Prendo gli elementi dalla pagina
 const blackboardElement = document.getElementById("ps-blackboard");
 console.log(blackboardElement);
 
-let multipleOfThree = "Fizz";
-let multipleOfFive = "Buzz";
-let multipleOfBoth = "FizzBuzz";
 
-// 3 - Apro un ciclo che ripeta un'operazione per 100 volte
+/* 2/3/4 - Apro un ciclo che ripeta un'operazione per 100 volte
+           All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
+           Valuto se il numero è un multiplo di 3 e/o 5, e stampo il valore richiesto.*/
 for(let i = 1; i <= 100; i++) {
     if (((i % 3) === 0) && ((i % 5) === 0)) {
-        // i = multipleOfBoth;
-        console.log(multipleOfBoth);
+        console.log(`FizzBuzz`);
+        // blackboardElement.innerText += `FizzBuzz`;
      } else if ((i % 3) === 0){
-        console.log(multipleOfThree);
+        console.log(`Fizz`);
+        // blackboardElement.innerText += `Fizz`;
      } else if ((i % 5) === 0){
-        console.log(multipleOfFive);
+        console.log(`Buzz`);
+        // blackboardElement.innerText += `Buzz`;
      } else
         console.log(i);
-}
+        // blackboardElement.innerText += (i);
 
- 
+}

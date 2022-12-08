@@ -46,6 +46,7 @@ let result = '';
 for (i = 1; i <= 100; i++) {
   if ((i % 3 === 0) && (i % 5 === 0)) {
      result = "FizzBuzz";
+     result.className = 'multiple-both';
      console.log("FizzBuzz");
    } else if (i % 5 === 0) {
      result = "buzz";
@@ -59,11 +60,10 @@ for (i = 1; i <= 100; i++) {
    }
 
   printBlackboard += "<li>" + result + "</li>";
+ 
 }
    
 
 // 6 - (BONUS 1) Stampa elementi in pagina HTML
 blackboard.innerHTML = printBlackboard;
 
-
-// 7 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi stampati in pagina (numero, buzz, fizz, fizzbuzz)

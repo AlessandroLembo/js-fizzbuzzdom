@@ -35,26 +35,26 @@ ul{
 li{
     flex-basis: 100px;
     height: 100px;
-    /* background-color: red;  */
+    background-color: #e68a00;
     list-style-type: none;
     text-align: center;
     font-size: 20px;
     padding-top: 30px;
 }
 
-.number{
-    background-color: #e68a00;
+
+/*7 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi 
+      stampati in pagina (numero, buzz, fizz, fizzbuzz)*/
+
+li:nth-child(3n+0) {
+    background-color: #5900b3;
 }
 
-.multiple-three{
-    background-color: #5900b3 ;
-}
-
-.multiple-five{
+li:nth-child(5n+0) {
     background-color: #992600;
 }
 
-.multiple-both{
+li:nth-child(15n+0) {
     background-color: #008fb3;
-    ;
 }
+

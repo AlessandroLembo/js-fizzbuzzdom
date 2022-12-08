@@ -21,33 +21,46 @@ Come abbiamo visto puoi  usare varie tecniche (style , className, classList)
 /*
 ANALISI
 1 - Prendo gli elementi dalla pagina
-2 - Apro un ciclo che mi ripeta un'operazione per 100 volte
-3 - All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
-4 - Valuto se il numero è un multiplo di 3 e/o 5, e stampo il valore richiesto. 
-5 - (BONUS 1) Creo un contenitore nel DOM HTML e ci stampo gli elementi
-6 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi stampati in pagina (numero, buzz, fizz, fizzbuzz)
+2 - Preparo variabili di appoggio
+3 - Apro un ciclo che mi ripeta un'operazione per 100 volte
+4 - All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
+5 - Valuto se il numero è un multiplo di 3 e/o 5, e stampo in console il valore richiesto.
+6 - (BONUS 1) Creo un contenitore nel DOM HTML e ci stampo gli elementi
+7 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi stampati in pagina (numero, buzz, fizz, fizzbuzz)
 */
 
 // 1 - Prendo gli elementi dalla pagina
-const blackboardElement = document.getElementById("ps-blackboard");
-console.log(blackboardElement);
+const blackboardElement = document.getElementById("blackboard");
+// console.log(blackboardElement);
 
 
-/* 2/3/4 - Apro un ciclo che ripeta un'operazione per 100 volte
+// 2 - Preparo delle variabili di appoggio
+let printBlackboard = '';
+let result = '';
+
+
+/* 3/4/5 - Apro un ciclo che ripeta un'operazione per 100 volte
            All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
-           Valuto se il numero è un multiplo di 3 e/o 5, e stampo il valore richiesto.*/
-for(let i = 1; i <= 100; i++) {
-    if (((i % 3) === 0) && ((i % 5) === 0)) {
-        // console.log(`FizzBuzz`);
-        blackboardElement.innerText += (`FizzBuzz`);
-     }  else if ((i % 3) === 0){
-        // console.log(`Fizz`);
-        blackboardElement.innerText += (`Fizz`);
-     } else if ((i % 5) === 0){
-        // console.log(`Buzz`);
-        blackboardElement.innerText += (`Buzz`);
-     } else
-        // console.log(i);
-        blackboardElement.innerText += (i);
+           Valuto se il numero è un multiplo di 3 e/o 5, e stampo in console il valore richiesto.*/
+for (i = 1; i <= 100; i++) {
+   if ((i % 3 === 0) && (i % 5 === 0)) {
+      result = "FizzBuzz";
+      console.log("FizzBuzz");
+    } else if (i % 5 === 0) {
+      result = "buzz";
+      console.log("buzz");
+    } else if (i % 3 === 0) {
+      result = "Fizz";
+      console.log("Fizz");
+    } else {
+      result = i;
+      console.log(i);
+    }
 
+   printBlackboard += result;
 }
+    
+
+// 6 - (BONUS 1) Stampa elementi in pagina HTML
+blackboard.innerText = printBlackboard;
+

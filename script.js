@@ -49,11 +49,9 @@ for (i = 1; i <= 100; i++) {
      console.log("FizzBuzz");
    } else if (i % 5 === 0) {
      result = "buzz";
-     isMultipleOfThree = result;
      console.log("buzz");
    } else if (i % 3 === 0) {
      result = "Fizz";
-     isMultipleOfFive = result;
      console.log("Fizz");
    } else {
      result = i;

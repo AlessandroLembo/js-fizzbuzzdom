@@ -1,17 +1,27 @@
-body{
-    /* background-color: blue; */
-}
-
 .personal-container{
-    width: 1200px;
+    width: 1300px;
     /* height: 600px; */
     margin: 0 auto;
     background-color: lightseagreen;
 }
 
-#ps-blackboard{
+#blackboard{
     width: 80%;
     /* height: 300px; */
     margin: 0 auto;
-    /* background-color: red; */
+    /* background-color: red;  */
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+li{
+    flex-basis: 80px;
+    height: 80px;
+    background-color: red;
+    list-style-type: none;
 }

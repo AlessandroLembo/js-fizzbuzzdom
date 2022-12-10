@@ -46,7 +46,6 @@ let result = '';
 for (i = 1; i <= 100; i++) {
   if ((i % 3 === 0) && (i % 5 === 0)) {
      result = "FizzBuzz";
-     result.className = 'multiple-both';
      console.log("FizzBuzz");
    } else if (i % 5 === 0) {
      result = "buzz";

@@ -43,7 +43,7 @@ let result = '';
            All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
            Valuto se il numero è un multiplo di 3 e/o 5, e stampo in console il valore richiesto.*/
 
-for (i = 1; i <= 100; i++) {
+for (let i = 1; i <= 100; i++) {
   if ((i % 3 === 0) && (i % 5 === 0)) {
      result = "FizzBuzz";
      console.log("FizzBuzz");

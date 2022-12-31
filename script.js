@@ -36,7 +36,6 @@ const blackboardElement = document.getElementById("blackboard");
 
 // 2 - Preparo delle variabili di appoggio
 let printBlackboard = '';
-// let result = '';
 
 
 /* 3/4/5 - Apro un ciclo che ripeta un'operazione per 100 volte

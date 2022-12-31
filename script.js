@@ -34,13 +34,12 @@ const blackboardElement = document.getElementById("blackboard");
 // console.log(blackboardElement);
 
 
-// 2 - Preparo delle variabili di appoggio
+// 2 - Preparo una variabile d'appoggio
 let printBlackboard = '';
 
 
 /* 3/4/5 - Apro un ciclo che ripeta un'operazione per 100 volte
-           All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5
-           Valuto se il numero è un multiplo di 3 e/o 5, e stampo in console il valore richiesto.*/
+           All'interno del ciclo mi chiedo se ogni numero stampato sia multiplo di 3 e/o 5 */
 
 for (let i = 1; i <= 100; i++) {
   

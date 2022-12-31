@@ -36,7 +36,7 @@ const blackboardElement = document.getElementById("blackboard");
 
 // 2 - Preparo delle variabili di appoggio
 let printBlackboard = '';
-let result = '';
+// let result = '';
 
 
 /* 3/4/5 - Apro un ciclo che ripeta un'operazione per 100 volte
@@ -44,21 +44,19 @@ let result = '';
            Valuto se il numero è un multiplo di 3 e/o 5, e stampo in console il valore richiesto.*/
 
 for (let i = 1; i <= 100; i++) {
-  if ((i % 3 === 0) && (i % 5 === 0)) {
-     result = "FizzBuzz";
-     console.log("FizzBuzz");
-   } else if (i % 5 === 0) {
-     result = "buzz";
-     console.log("buzz");
-   } else if (i % 3 === 0) {
-     result = "Fizz";
-     console.log("Fizz");
-   } else {
-     result = i;
-     console.log(i);
-   }
+  
+  let content = i;
 
-  printBlackboard += "<li>" + result + "</li>";
+  if ((i % 3 === 0) && (i % 5 === 0)) {
+     content = 'FizzBuzz';
+   } else if (i % 5 === 0) {
+     content = 'buzz';
+   } else if (i % 3 === 0) {
+     content = 'Fizz';
+   }
+  
+  console.log(content);
+  printBlackboard += "<li>" + content + "</li>";
  
 }
    

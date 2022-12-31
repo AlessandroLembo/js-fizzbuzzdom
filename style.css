@@ -44,7 +44,7 @@ li{
 /*7 - (BONUS 2) Assegno uno stile per ognuno dei 4 tipi di elementi 
       stampati in pagina (numero, buzz, fizz, fizzbuzz)*/
 
-li:nth-child(3n+0) {
+/* li:nth-child(3n+0) {
     background-color: #5900b3;
 }
 
@@ -53,6 +53,18 @@ li:nth-child(5n+0) {
 }
 
 li:nth-child(15n+0) {
+    background-color: #008fb3;
+} */
+
+.Fizz{
+    background-color: #5900b3;
+}
+
+.Buzz{
+    background-color: #992600;
+}
+
+.FizzBuzz{
     background-color: #008fb3;
 }
 

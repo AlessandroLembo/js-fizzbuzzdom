@@ -49,13 +49,13 @@ for (let i = 1; i <= 100; i++) {
   if ((i % 3 === 0) && (i % 5 === 0)) {
      content = 'FizzBuzz';
    } else if (i % 5 === 0) {
-     content = 'buzz';
+     content = 'Buzz';
    } else if (i % 3 === 0) {
      content = 'Fizz';
    }
   
   console.log(content);
-  printBlackboard += "<li>" + content + "</li>";
+  printBlackboard += `<li class= "${content}"> ${content}</li>`;
  
 }
    

@@ -31,7 +31,6 @@ ANALISI
 
 // 1 - Prendo gli elementi dalla pagina
 const blackboardElement = document.getElementById("blackboard");
-// console.log(blackboardElement);
 
 
 // 2 - Preparo una variabile d'appoggio
@@ -53,7 +52,6 @@ for (let i = 1; i <= 100; i++) {
      content = 'Fizz';
    }
   
-  console.log(content);
   printBlackboard += `<li class= "${content}"> ${content}</li>`;
  
 }
